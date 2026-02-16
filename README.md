@@ -10,7 +10,7 @@ El flujo valida datos, evita duplicados, clasifica el mensaje con Inteligencia A
 
 Construir un servicio backend capaz de:
 
-    - Recibir leads vía webhook
+    -   Recibir leads vía webhook
     -	Validar campos obligatorios
     -	Evitar registros duplicados
     -	Clasificar mensajes usando IA
@@ -55,7 +55,7 @@ El proyecto sigue una estructura basada en separación de responsabilidades:
     Envío de correo automático
 ```
 
-<img src="app/img/work-system.png" alt="work-system" width="500"/>
+<img src="./app/img/work-system.png" alt="work-system" width="500"/>
 
 ---
 
