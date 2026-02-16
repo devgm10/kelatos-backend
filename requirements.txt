@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+email-validator
+gspread
+google-auth
+openai
