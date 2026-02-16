@@ -55,7 +55,7 @@ El proyecto sigue una estructura basada en separación de responsabilidades:
     Envío de correo automático
 ```
 
-<img src="./app/img/work-system.png" alt="work-system" width="500"/>
+<img src="./app/img/work-system.png" alt="work-system" width="900"/>
 
 ---
 
@@ -69,7 +69,7 @@ El proyecto sigue una estructura basada en separación de responsabilidades:
 - **Google Sheets API (Service Account)**
 - **SMTP Gmail**
 
-<img src="app/img/stack-tec.png" alt="work-system" width="500"/>
+<img src="app/img/stack-tec.png" alt="work-system" width="900"/>
 
 ---
 
