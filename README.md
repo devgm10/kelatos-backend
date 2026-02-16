@@ -9,13 +9,13 @@ El flujo valida datos, evita duplicados, clasifica el mensaje con Inteligencia A
 ## 🎯 Objetivo
 
 Construir un servicio backend capaz de:
-	•	Recibir leads vía webhook
-	•	Validar campos obligatorios
-	•	Evitar registros duplicados
-	•	Clasificar mensajes usando IA
-	•	Asignar prioridad según reglas de negocio
-	•	Persistir información
-	•	Enviar respuesta automática por correo
+    •	Recibir leads vía webhook
+    •	Validar campos obligatorios
+    •	Evitar registros duplicados
+    •	Clasificar mensajes usando IA
+    •	Asignar prioridad según reglas de negocio
+    •	Persistir información
+    •	Enviar respuesta automática por correo
 
 ---
 
@@ -75,11 +75,11 @@ El proyecto sigue una estructura basada en separación de responsabilidades:
 ## 🤖 Clasificación con Inteligencia Artificial
 
 Se integra OpenAI para clasificar el mensaje en:
-	•	Ventas
-	•	Soporte
-	•	Información
-	•	Spam
-	•	Generar un resumen automático del contenido
+    •	Ventas
+    •	Soporte
+    •	Información
+    •	Spam
+    •	Generar un resumen automático del contenido
 
 La integración está encapsulada en un servicio independiente para mantener desacoplada la capa HTTP.
 
@@ -99,10 +99,10 @@ La integración está encapsulada en un servicio independiente para mantener des
 
 ## 📦 Persistencia
 
-Se utiliza Google Sheets como almacenamiento ligero para esta implementación.
-	•	Autenticación mediante Service Account
-	•	Credenciales protegidas mediante variables de entorno
-	•	Verificación de duplicados por email
+Se utiliza Google Sheets como almacenamiento ligero para esta implementación:
+    •	Autenticación mediante Service Account
+    •	Credenciales protegidas mediante variables de entorno
+    •	Verificación de duplicados por email
 
 En un entorno productivo se recomienda migrar a una base de datos relacional con índice único en el campo email.
 
@@ -111,18 +111,18 @@ En un entorno productivo se recomienda migrar a una base de datos relacional con
 ## 📧 Notificación Automática
 
 El sistema envía un correo automático utilizando:
-	•	Conexión segura SMTP_SSL
-	•	Autenticación mediante App Password
-	•	Manejo seguro de credenciales
+    •	Conexión segura SMTP_SSL
+    •	Autenticación mediante App Password
+    •	Manejo seguro de credenciales
 
 ---
 
 ## 🔐 Seguridad
-	•	Variables de entorno para todas las credenciales
-	•	No se almacenan secretos en el repositorio
-	•	Scopes mínimos necesarios en Google API
-	•	Aplicación contenerizada con Docker
-	•	Separación clara entre capas
+    •	Variables de entorno para todas las credenciales
+    •	No se almacenan secretos en el repositorio
+    •	Scopes mínimos necesarios en Google API
+    •	Aplicación contenerizada con Docker
+    •	Separación clara entre capas
 
 ---
 
@@ -169,12 +169,12 @@ Ejemplo .env:
 ---
 
 ## 🚀 Posibles Mejoras
-	•	Migración a PostgreSQL
-	•	Índice único en email
-	•	Procesamiento asíncrono para clasificación IA
-	•	Logging estructurado
-	•	Tests automatizados
-	•	Despliegue en entorno cloud
+    •	Migración a PostgreSQL
+    •	Índice único en email
+    •	Procesamiento asíncrono para clasificación IA
+    •	Logging estructurado
+    •	Tests automatizados
+    •	Despliegue en entorno cloud
 
 ---
 
