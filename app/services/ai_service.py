@@ -7,12 +7,12 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def classify_and_summarize(message: str) -> dict:
 
     prompt = f"""
-    Clasifica el siguiente mensaje en una de estas categorías:
-    Ventas, Soporte, Información o Spam.
+    1. Clasifica el siguiente mensaje en una de estas categorías:
+        Ventas, Soporte, Información o Spam.
 
-    Luego genera un resumen corto (1 oración).
+    2. Luego genera un resumen simulando que eres el usuario (1 oración).
 
-    Devuelve SOLO un JSON válido con este formato exacto:
+    3. Devuelve SOLO un JSON válido con este formato exacto:
     {{
         "category": "Ventas|Soporte|Información|Spam",
         "summary": "texto"

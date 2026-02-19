@@ -35,7 +35,7 @@ def send_email(to_email: str, category: str, summary: str):
     {body_map.get(category, "")}
 
     Saludos,
-    Equipo de Atención Kelatos.
+    Equipo Dev.
     """)
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
